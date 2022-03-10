@@ -4,11 +4,11 @@ import Transaction from '../components/Transaction'
 import Navbar from '../components/Navbar'
 import { useEffect } from 'react';
 
-export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/extratos');
-  const data = await res.json();
-  return { props: { data } }
-}
+// export async function getServerSideProps() {
+//   const res = await fetch('http://localhost:3000/api/extratos');
+//   const data = await res.json();
+//   return { props: { data } }
+// }
 
 
 export default function Home({ data }) {
@@ -25,9 +25,9 @@ export default function Home({ data }) {
       </Head>
       <Navbar data={data} />
       <main className={styles.main}>
-        {data.reverse().map((mod, index) => (
+        {/* {data.reverse().map((mod, index) => (
           <Transaction key={mod._id} data={mod} index={index} length={data.length} nextMod={data[++index]} />
-        ))}
+        ))} */}
       </main >
     </>
   )
