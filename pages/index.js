@@ -28,9 +28,6 @@ export default function Home({ data }) {
         {data.reverse().map((mod, index) => (
           <Transaction data={mod} index={index} length={data.length} nextMod={data[++index]} />
         ))}
-        {/* <main className={styles.main}>
-        <button className={styles.button}>+</button>
-      </main> */}
       </main >
     </>
   )
