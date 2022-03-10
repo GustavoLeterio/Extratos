@@ -27,7 +27,7 @@ export default function Home({ data }) {
       <main className={styles.main}>
         {data.reverse().map((mod, index) => (
           <Transaction key={mod._id} data={mod} index={index} length={data.length} nextMod={data[++index]} />
-        ))}
+        ))}  
       </main >
     </>
   )
