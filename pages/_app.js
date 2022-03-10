@@ -1,11 +1,8 @@
-import { TransactionProvider } from '../contexts/TransactionContext'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <TransactionProvider>
       <Component {...pageProps} />
-    </TransactionProvider>
   )
 }
 

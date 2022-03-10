@@ -12,23 +12,23 @@ export async function getServerSideProps() {
 
 
 export default function Home({ data }) {
-  useEffect(()=>{
+  useEffect(() => {
     document.documentElement.lang = "pt-BR";
-  },[]);
-  
+  }, []);
+
   return (
     <>
       <Head>
         <title>Meus Extratos</title>
         <meta name="description" content="Meus Extratos" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar data={data} />
-      {/* <main className={styles.main}>
+      <main className={styles.main}>
         {data.reverse().map((mod, index) => (
           <Transaction key={mod._id} data={mod} index={index} length={data.length} nextMod={data[++index]} />
-        ))}  
-      </main > */}
+        ))}
+      </main >
     </>
   )
 }
