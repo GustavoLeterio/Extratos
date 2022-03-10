@@ -206,7 +206,7 @@ export default function Transaction(props) {
                         type={"text"}
                         name={"title"}
                         placeholder={props.data.title}
-                        maxlength={"25"}
+                        maxLength={"25"}
                         onChange={onChangeTitle}
                         style={{ maxWidth: "calc(6rem*" + (0.4625 * titleSize) + ")" }}
                         autoComplete="off"

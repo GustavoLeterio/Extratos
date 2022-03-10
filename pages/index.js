@@ -1,4 +1,3 @@
-import { Html } from 'next/document'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Transaction from '../components/Transaction'
