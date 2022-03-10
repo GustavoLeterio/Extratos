@@ -1,0 +1,190 @@
+/* 
+  :root {
+    --bg-color: #101010;
+    --gain-color: #00ED19;
+    --loss-color: #F5542C;
+    --accent-color: #ffffff;
+    --shadow-color: #000000;
+    --button-color: #919191;
+  } 
+*/
+.transactionWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transactionWrapper:first-child {
+  margin-top: 33vh;
+}
+
+.transactionWrapper:last-child {
+  margin-bottom: 18rem;
+}
+
+
+.transactionBox {
+  padding: 0;
+  color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Share Tech Mono";
+  animation: fadein 200ms ease-in-out 1;
+}
+
+
+
+.valueLine {
+  display: flex;
+  align-items: center;
+}
+
+.transactionValue {
+  font-size: 8rem;
+  letter-spacing: -18px;
+}
+
+.manipulationButton {
+  margin: 0 0 10px 25px;
+  opacity: .3;
+  width: 60px;
+  padding: 0;
+  font-size: 0px;
+  color: transparent;
+  border: none;
+  background-color: transparent;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  fill: var(--button-color);
+}
+
+.manipulationButton:first-child {
+  margin-right: 7px;
+}
+
+
+.manipulationButton:focus {
+  opacity: 1 !important;
+  border-bottom: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.transactionBox:hover .manipulationButton {
+  opacity: 0.5;
+}
+
+.manipulationButton:hover {
+  opacity: 1 !important;
+}
+
+.transactionTitle {
+  margin: -0.5rem;
+  font-size: 6rem;
+  letter-spacing: -8px;
+}
+
+.transactionDescription {
+  font-size: 2.5rem;
+}
+
+.transactionDateAndHour {
+  margin: 3px;
+  font-size: 2rem;
+}
+
+.transactionBox input {
+  padding: 0;
+  border: none;
+  outline: none;
+  border-bottom: inset 1px solid #FFFFFF55;
+  font-family: "Share Tech Mono";
+  background-color: transparent;
+  color: var(--accent-color);
+  transition: border 100ms ease-in-out;
+  text-align: center;
+}
+.transactionBox input:focus{
+  border-bottom: 1px solid var(--accent-color);
+}
+.inputValue {
+  text-align: left !important;
+  transition: color 700ms ease-in-out;
+  letter-spacing: -16px;
+  font-size: 8rem;
+}
+
+.inputValue::-webkit-outer-spin-button,
+.inputValue::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.inputValue[type=number] {
+  -moz-appearance: textfield;
+}
+
+.inputTitle {
+  margin: -0.5rem;
+  font-size: 6rem;
+  letter-spacing: -8px;
+}
+
+.inputDescription {
+  font-size: 2.5rem;
+}
+
+.inputDateAndHour {
+  text-align: center;
+  margin: 3px;
+  font-size: 2rem;
+}
+
+.invalid {
+  animation: invalid 300ms ease-in-out 1;
+}
+
+.connector {
+  justify-self: center;
+  margin: 5vh 0;
+  width: 15px;
+  height: 60vh;
+  border-radius: 14px;
+  animation: fadeinConnector 400ms ease-in-out 1;
+}
+
+@media (max-width: 600px) {}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes invalid {
+  0% {
+    transform: translateX(0);
+    color: var(--invalid-color);
+  }
+
+  25% {
+    transform: translateX(-3px);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+
+  75% {
+    color: var(--invalid-color);
+    transform: translateX(-3px);
+  }
+
+  100% {
+    color: var(--white-color);
+  }
+}

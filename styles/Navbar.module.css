@@ -1,0 +1,45 @@
+.nav {
+  width: 100vw;
+  padding: 40px;
+  position:fixed;
+}
+.list{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list li:last-child{
+  margin-left: 40px;
+}
+
+.button {
+  width: 70px;
+  padding: 0;
+  font-size: 0px;
+  color: transparent;
+  border: none;
+  background-color: transparent;
+  transition: 300ms ease-in-out;
+}
+
+
+.button:first-child:hover {
+  filter: drop-shadow(0px 0px 2px var(--gain-color));
+  -webkit-filter: drop-shadow(0px 0px 2px var(--gain-color));
+  -moz-filter: drop-shadow(0px 0px 2px var(--gain-color));
+  -o-filter: drop-shadow(0px 0px 2px var(--gain-color));
+
+}
+
+.button:last-child:hover {
+  filter: drop-shadow(0px 0px 2px var(--loss-color));
+  -webkit-filter: drop-shadow(0px 0px 2px var(--loss-color));
+  -moz-filter: drop-shadow(0px 0px 2px var(--loss-color));
+  -o-filter: drop-shadow(0px 0px 2px var(--loss-color));
+}
+
+.button svg path {
+  cursor: pointer;
+}
+@media (max-width: 600px) {}

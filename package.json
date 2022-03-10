@@ -8,9 +8,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.0.10",
+    "animate.css": "^4.1.1",
+    "mongodb": "^4.3.1",
+    "next": "^12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "remask": "0.1.0-alpha.5"
   },
   "devDependencies": {
     "eslint": "8.9.0",
