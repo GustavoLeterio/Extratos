@@ -7,30 +7,30 @@ import { forceReloadUtil } from "../utils/reloader"
 
 
 export default function Home({ props }) {
-    async function apiConnection(e) {
-        // e.preventDefault()
-        const formData = {
-            transactionType: "gain",
-            value: 200.32,
-            title: "teste",
-            description: "teste",
-            dateAndHour: "2022-02-20T20:16:00.000Z"
-        };
+    // async function apiConnection(e) {
+    //     // e.preventDefault()
+    //     const formData = {
+    //         transactionType: "gain",
+    //         value: 200.32,
+    //         title: "teste",
+    //         description: "teste",
+    //         dateAndHour: "2022-02-20T20:16:00.000Z"
+    //     };
 
-        // const ala = {}
-        // Array.from(e.currentTarget.elements).forEach(field => {
-        //     if (!field.name) return;
-        //     ala[field.name] = field.value;
-        // });
+    //     // const ala = {}
+    //     // Array.from(e.currentTarget.elements).forEach(field => {
+    //     //     if (!field.name) return;
+    //     //     ala[field.name] = field.value;
+    //     // });
 
-        fetch('/api/extratos', {
-            method: 'POST',
-            body: JSON.stringify(formData)
-        });
+    //     fetch('/api/extratos', {
+    //         method: 'POST',
+    //         body: JSON.stringify(formData)
+    //     });
 
-        // forceReloadUtil;
+    //     // forceReloadUtil;
 
-    }
+    // }
 
     return (
         <nav className={styles.nav}>
