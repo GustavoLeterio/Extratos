@@ -97,7 +97,6 @@
   padding: 0;
   border: none;
   outline: none;
-  border-bottom: inset 1px solid #FFFFFF55;
   font-family: "Share Tech Mono";
   background-color: transparent;
   color: var(--accent-color);
